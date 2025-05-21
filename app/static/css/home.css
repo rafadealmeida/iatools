@@ -1,0 +1,48 @@
+@import url(button.css);
+
+.main {
+    background-image: url("https://img.freepik.com/free-photo/colourful-night-sky-with-nebula-star-field_1048-5697.jpg?t=st=1742431072~exp=1742434672~hmac=781b4c8f161dd5733eff070b25e147fa0209de4b8ba16729b8160dcf4c849cfa&w=996");
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover;
+}
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin: 0 auto;
+    max-width: 70%;
+    text-align: center;
+    height: 100%;
+}
+
+.banner-title{
+    font-size: 3rem;
+    width: 65%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.banner-button{
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+    color: rgb(66, 66, 66);
+}
+
+
+.banner-content{
+    font-style: italic;
+}
+
+@media screen and (min-width: 1024px){
+    .banner{
+       
+        max-width: 40%;
+      
+    }  
+}

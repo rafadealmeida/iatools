@@ -1,0 +1,118 @@
+.formularioContato { 
+ display: flex;
+ flex-direction: column;
+ align-content: center;
+ justify-content: center;
+ width: 100%;
+ margin: 2rem auto;
+}
+
+.form-input{
+    width: 95%;
+    border-width: 4px;
+    border-style: solid;
+    border-image: linear-gradient(45deg, #C98CF1,#7B78E5);
+}
+
+.form-input-textarea{
+    width:98%;
+}
+
+.input-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.banner__titulo-contato{
+    color: #FFFFFF;
+    font-size: 40px;
+    width: 350px;
+    line-height: 50px;
+    margin-top: -20%;
+    padding-bottom: 4rem;
+    margin-left: 1rem;
+    /* position: absolute; */
+}
+
+.formularioContato label  { 
+
+    float:left; 
+    width:100%; 
+    margin-bottom:1.2em; 
+
+}
+
+.formularioContato label span {
+
+    width: 100%;
+    float: left;
+    color: #fefefe;
+    margin-bottom: 6px;
+    font-family:'open_sansregular'; 
+
+}
+
+.formularioContato label input  { 
+
+    font-size:1em; 
+    color:#fefefe; 
+    font-family:'open_sansregular'; 
+    outline:none; 
+    border:1px #dee5ed solid; 
+    border-radius:4px; 
+    padding:0.6em; 
+    transition: 0.3s;  
+
+}
+
+.formularioContato label select { 
+
+    font-size:1em; 
+    color:#fefefe; 
+    border:1px #dee5ed solid; 
+    border-radius:4px; 
+    padding:0.6em; 
+    outline:none; 
+    transition: 0.3s;  
+
+}
+
+.formularioContato label textarea { 
+
+    font-size:1em; 
+    color:#fefefe; 
+    border:1px #dee5ed solid; 
+    border-radius:4px; 
+    padding:0.6em; 
+    outline:none;
+    transition: 0.3s;   
+
+}
+
+.formularioContato label input:focus    { box-shadow:0 0 5px 0px #C98CF1; border:1px #7B78E5 solid; color:#7B78E5;}
+.formularioContato label select:focus   { box-shadow:0 0 5px 0px #C98CF1; border:1px #7B78E5 solid; }
+.formularioContato label textarea:focus { box-shadow:0 0 5px 0px #C98CF1; border:1px #7B78E5 solid; color:#7B78E5;}
+
+.formularioContato button.btn-envia { 
+
+    background-color:rgb(37,174,230); 
+    width:100%; display:block; 
+    margin:auto; cursor:pointer; 
+    border-radius:4px;  
+    border:0; 
+    padding:0.8em 0em; 
+    color:#fff; 
+    font-size:1.3em; 
+    font-family:'open_sansbold'; 
+    text-align: center;
+    transition: 0.3s;   
+
+}
+
+.formularioContato button.btn-envia:hover { 
+
+    background-color:rgb(123, 120, 229); 
+
+}

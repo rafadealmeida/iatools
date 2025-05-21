@@ -1,0 +1,56 @@
+[
+  {
+    "model": "galeria.IATool",
+    "pk": 2,
+    "fields": {
+      "nome": "DALL·E",
+      "legenda": "Gerador de Imagens por Texto",
+      "descricao": "Uma IA da OpenAI que cria imagens a partir de descrições textuais, possibilitando ilustrações criativas e conceituais."
+    }
+  },
+  {
+    "model": "galeria.IATool",
+    "pk": 3,
+    "fields": {
+      "nome": "Midjourney",
+      "legenda": "Arte Visual por Inteligência Artificial",
+      "descricao": "Um modelo independente focado na criação de imagens artísticas baseadas em prompts textuais, com estilo único e detalhado."
+    }
+  },
+  {
+    "model": "galeria.IATool",
+    "pk": 4,
+    "fields": {
+      "nome": "Bard",
+      "legenda": "IA Conversacional do Google",
+      "descricao": "Uma inteligência artificial do Google voltada para busca de conhecimento, escrita criativa e auxílio em tarefas com integração à web."
+    }
+  },
+  {
+    "model": "galeria.IATool",
+    "pk": 5,
+    "fields": {
+      "nome": "Whisper",
+      "legenda": "Transcrição de Áudio com IA",
+      "descricao": "Sistema de reconhecimento automático de fala da OpenAI, capaz de transcrever áudios com alta precisão, suportando diversos idiomas."
+    }
+  },
+  {
+    "model": "galeria.IATool",
+    "pk": 6,
+    "fields": {
+      "nome": "Runway ML",
+      "legenda": "Edição de Vídeo com IA",
+      "descricao": "Ferramenta criativa que permite remover fundos, gerar vídeos a partir de texto, e aplicar efeitos visuais usando inteligência artificial."
+    }
+  },
+  {
+    "model": "galeria.IATool",
+    "pk": 7,
+    "fields": {
+      "nome": "Copy.ai",
+      "legenda": "Geração de Conteúdo de Marketing",
+      "descricao": "IA focada na criação de textos publicitários, posts para redes sociais, e-mails e descrições de produto."
+    }
+  }
+]
