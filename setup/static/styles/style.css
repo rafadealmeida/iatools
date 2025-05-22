@@ -1,15 +1,15 @@
 :root {
-    --gradient-background: linear-gradient(#041833, #04244F, #154580);
+    --gradient-background: linear-gradient(#311445, #991C1C, #C48833);
     --gradient-busca: linear-gradient(45deg, #C98CF1, #7B78E5);
     --button-background-hover: transparent;
   
     /* Cores principais */
     --primary-dark: #041833;
-    --secondary-dark: #04244F;
+    --secondary-dark: #C48833;
     --accent: #154580;
     --highlight: #7B78E5;
     --light-highlight: #C98CF1;
-    --dark-background: #041A37;
+    --dark-background: #370c54;
     --card-shadow: #00000050;
     --light-gray: #D9D9D9;
     --gray-overlay: #9b9b9b;
@@ -127,6 +127,7 @@ table {
     height: 24px;
     padding: 10px;
     width: 500px;
+    color: var(--white);
 }
 
 .busca__icone {
@@ -225,8 +226,12 @@ table {
     background-color: transparent;
     display: flex;
     flex-direction: column;
-    border-radius: 20px 20px 0 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.5rem;
     width: 950px;
+    background-color: var(--card-shadow);
+    padding: 2rem;
 }
 
 .imagem__imagem {
@@ -234,6 +239,7 @@ table {
     height: 600px;
     object-fit: fill;
     border-radius: 20px;
+    margin: 0 auto;
 }
 
 .imagem__info {
@@ -251,6 +257,7 @@ table {
     justify-content: space-between;
     color: var(--white);
     margin-top: 0.5rem;
+    font-size: 1rem;
 }
 
 .imagem__titulo {
@@ -259,9 +266,6 @@ table {
     color: var(--white);
 }
 
-.imagem__texto {
-    font-size: 1rem;
-}
 
 .imagem__descricao {
     font-size: 0.7rem;

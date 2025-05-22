@@ -1,163 +1,113 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Planet</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    {% load static %}
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="{% static 'css/styles/style.css' %}"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="{% static 'css/styles/contato.css' %}"
-    />
-  </head>
+{% extends "galeria/base.html" %} {% load static %} {% block content %}
 
-  <body>
-    <div class="pagina-inicial">
-      <header class="cabecalho">
-        <img src="{% static '/assets/logo/ologo.png' %}" alt="Logo da Planet" />
-        <div class="cabecalho__busca">
-          <div class="busca__fundo">
-            <input
-              class="busca__input"
-              type="text"
-              placeholder="O que você procura?"
-            />
-            <img
-              class="busca__icone"
-              src="{% static '/assets/ícones/1x/search.png' %}"
-              alt="ícone de search"
-            />
-          </div>
-        </div>
-      </header>
-      <main class="principal">
-        <section class="menu-lateral">
-          <nav class="menu-lateral__navegacao">
-            <a href="#"
-              ><img src="{% static '/assets/ícones/1x/Home - ativo.png' %}" />
-              Home</a
-            >
-            <a href="#"
-              ><img
-                src="{% static '/assets/ícones/1x/Mais vistas - inativo.png' %}"
-              />
-              Mais vistas</a
-            >
-            <a href="#"
-              ><img
-                src="{% static '/assets/ícones/1x/Novas - inativo.png' %}"
-              />
-              Novas</a
-            >
-            <a href="#"
-              ><img
-                src="{% static '/assets/ícones/1x/Surpreenda-me - inativo.png' %}"
-              />
-              Surpreenda-me</a
-            >
-          </nav>
-        </section>
-        <section class="conteudo">
-          <img
-            class="banner__imagem"
-            src="{% static '/assets/imagens/Banner(2).png' %}"
-            alt="banner da planet"
-          />
-          <h1 class="banner__titulo-contato">
-            Ache a melhor ia para seu objetivo!
-          </h1>
-          <section>
-            <form
-              class="formularioContato"
-              action="#"
-              method="post"
-              enctype="multipart/form-data"
-            >
-              <div class="input-row">
-                <label>
-                  <span><i class="icon icon-user-1"></i> Nome</span>
-                  <input
-                    type="text"
-                    name="nome"
-                    required=""
-                    class="form-input"
-                  />
-                </label>
-
-                <label>
-                  <span><i class="icon icon-email"></i> E-mail</span>
-                  <input type="email" name="email" class="form-input" />
-                </label>
-              </div>
-              <div class="input-row">
-                <label>
-                  <span><i class="icon icon-flag"></i> Telefone</span>
-                  <input
-                    type="tel"
-                    name="telefone"
-                    required=""
-                    class="form-input"
-                  />
-                </label>
-                <label>
-                  <span><i class="icon icon-flag"></i> Assunto</span>
-                  <input
-                    type="text"
-                    name="assunto"
-                    required=""
-                    class="form-input"
-                  />
-                </label>
-              </div>
-
-              <label>
-                <span><i class="icon icon-comment"></i>Mensagem</span>
-                <textarea
-                  name="mensagem"
-                  rows="6"
-                  required=""
-                  class="form-input-textarea"
-                ></textarea>
-              </label>
-
-              <input type="hidden" name="acao" value="enviar" />
-              <button class="btn-envia" title="Enviar">
-                <b class="icon icon-paper-plane-o"> Enviar</b>
-              </button>
-            </form>
-          </section>
-        </section>
-      </main>
-    </div>
-    <footer class="rodape">
-      <div class="rodape__icones">
-        <a href="https://twitter.com/AluraOnline" target="”_blank”">
-          <img
-            src="{% static '/assets/ícones/1x/twitter.png' %}"
-            alt="ícone twitter"
-          />
-        </a>
-        <a href="https://www.instagram.com/aluraonline/" target="”_blank”">
-          <img
-            src="{% static '/assets/ícones/1x/instagram.png' %}"
-            alt="ícone instagram"
-          />
-        </a>
+<div class="pagina-inicial">
+  <header class="cabecalho">
+    <img src="{% static '/assets/logo/ologo.png' %}" alt="Logo da Planet" />
+    <div class="cabecalho__busca">
+      <div class="busca__fundo">
+        <input
+          class="busca__input"
+          type="text"
+          placeholder="O que você procura?"
+        />
+        <img
+          class="busca__icone"
+          src="{% static '/assets/ícones/1x/search.png' %}"
+          alt="ícone de search"
+        />
       </div>
-      <p class="rodape__texto">Desenvolvido por Planet</p>
-    </footer>
-  </body>
-</html>
+    </div>
+  </header>
+  <main class="principal">
+    <section class="menu-lateral">
+      <nav class="menu-lateral__navegacao">
+        <a href="#"
+          ><img src="{% static '/assets/ícones/1x/Home - ativo.png' %}" />
+          Home</a
+        >
+        <a href="#"
+          ><img
+            src="{% static '/assets/ícones/1x/Mais vistas - inativo.png' %}"
+          />
+          Mais vistas</a
+        >
+        <a href="#"
+          ><img src="{% static '/assets/ícones/1x/Novas - inativo.png' %}" />
+          Novas</a
+        >
+        <a href="#"
+          ><img
+            src="{% static '/assets/ícones/1x/Surpreenda-me - inativo.png' %}"
+          />
+          Surpreenda-me</a
+        >
+      </nav>
+    </section>
+    <section class="conteudo">
+      <img
+        class="banner__imagem"
+        src="{% static '/assets/imagens/Banner(2).png' %}"
+        alt="banner da planet"
+      />
+      <h1 class="banner__titulo-contato">
+        Ache a melhor ia para seu objetivo!
+      </h1>
+      <section>
+        <form
+          class="formularioContato"
+          action="#"
+          method="post"
+          enctype="multipart/form-data"
+        >
+          <div class="input-row">
+            <label>
+              <span><i class="icon icon-user-1"></i> Nome</span>
+              <input type="text" name="nome" required="" class="form-input" />
+            </label>
+
+            <label>
+              <span><i class="icon icon-email"></i> E-mail</span>
+              <input type="email" name="email" class="form-input" />
+            </label>
+          </div>
+          <div class="input-row">
+            <label>
+              <span><i class="icon icon-flag"></i> Telefone</span>
+              <input
+                type="tel"
+                name="telefone"
+                required=""
+                class="form-input"
+              />
+            </label>
+            <label>
+              <span><i class="icon icon-flag"></i> Assunto</span>
+              <input
+                type="text"
+                name="assunto"
+                required=""
+                class="form-input"
+              />
+            </label>
+          </div>
+
+          <label>
+            <span><i class="icon icon-comment"></i>Mensagem</span>
+            <textarea
+              name="mensagem"
+              rows="6"
+              required=""
+              class="form-input-textarea"
+            ></textarea>
+          </label>
+
+          <input type="hidden" name="acao" value="enviar" />
+          <button class="btn-envia" title="Enviar">
+            <b class="icon icon-paper-plane-o"> Enviar</b>
+          </button>
+        </form>
+      </section>
+    </section>
+  </main>
+</div>
+{% endblock %}
