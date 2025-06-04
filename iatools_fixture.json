@@ -1,6 +1,16 @@
 [
   {
     "model": "galeria.IATool",
+    "fields": {
+      "nome": "ChatGPT",
+      "legenda": "Assistente de conversas com IA",
+      "descricao": "Ferramenta da OpenAI baseada em modelos de linguagem que permite gerar respostas contextuais, códigos, textos criativos, resumos e muito mais.",
+      "categoria": "GPT",
+      "publicada": true
+    }
+  },
+  {
+    "model": "galeria.IATool",
     "pk": 2,
     "fields": {
       "nome": "DALL·E",

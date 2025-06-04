@@ -1,11 +1,11 @@
 :root {
-    --gradient-background: linear-gradient(#311445, #991C1C, #C48833);
+    --gradient-background: linear-gradient(#333333, #1b1b1b);
     --gradient-busca: linear-gradient(45deg, #C98CF1, #7B78E5);
     --button-background-hover: transparent;
   
     /* Cores principais */
     --primary-dark: #041833;
-    --secondary-dark: #C48833;
+    --secondary-dark: #1b1b1b;
     --accent: #154580;
     --highlight: #7B78E5;
     --light-highlight: #C98CF1;
